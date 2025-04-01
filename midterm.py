@@ -36,7 +36,7 @@ for i in range(1, 16):
         result = cv2.matchTemplate(
             image_gray, 
             resized_template, 
-            cv2.TM_SQDIFF, 
+            cv2.TM_CCOEFF_NORMED, 
             mask=mask
         )
         
